@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paul Benedict Santos PHP</title>
+    <link rel="stylesheet" type="text/css" href="curry.css">
+
+</head>
+<body>
+    <header>
+        <h1>How to cook Katsu Curry</h1>
+    </header>
+
+    <section>
+        <h2>Katsu Curry recipe</h2>
+        <p>Katsu curry is just a variation of Japanese curry with a Chicken Cutlet on top. I have used a store-bought block of Japanese curry roux, which is commonly used in Japanese households. The Chicken Cutlet brings the Japanese curry up to the next level. It’s so delicious and filling.</p>
+        <ul>
+            <li>House Vermont Curry (medium hot) – see the sample photo of the packet in the post</li>
+            <li>Cooked rice</li>
+            <li>Onion – sliced into 1cm wide pieces</li>
+            <li>Potato – cut to 1.5cm / ⅝” cubes</li>
+            <li>Carrot – sliced to 7mm / ¼” thick pieces</li>
+            <li>Chicken Cutlet (Japanese Chicken Schnitzel) – cut into 2.5cm / 1″ wide strips</li>
+            <li>Fukujinzuke as a condiment (if you have it)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ingredients</h2>
+        <p>Ingredients (tbsp=15ml, cup=250ml)</p>
+
+        <?php
+            // Initial details
+            $prepTime = 5;
+            $meat = "ChickenCutlets";
+            $cuisine = "Japanese";
+			$onion="400g";
+			$potato="250g";
+			$carrot="100g";
+			$oil="1 tbsp";
+			$water="800ml";
+			$rice="4 cups";
+			$chicken="4 Chicken Cutlets";
+			$fukujinzuke ="4 tbps";
+			
+            // Data Types
+            $vegetables ="onion, potato, carrot, oil, House Vermont Curry, water, cooked rice, Chicken cutlets, fukujinzuke ";
+            $cookTime = 20.5;
+            // var_dump($cookTime);
+
+            $totalTime = 25; 
+            // var_dump($totalTime);
+
+            $isJapanese = True;
+            // var_dump($isJapanese);
+
+            // String Concatenations
+            $instruction="onion ".$onion."potato ".$potato."carrot ".$carrot."oil ".$oil."water ".$water."rice ".$rice."chicken ".$chicken."fukujinzuke ".$fukujinzuke;
+
+            // Print the information
+            echo "$instruction";
+            print "<p>".$vegetables."</p>";
+            echo "<p>".$prepTime."</p>";
+            echo "<p>".$cookTime."</p>";
+            echo "<p>".$totalTime."</p>";
+        ?>
+
+			<p>Place a cup of hot cooked rice onto one side of a plate. Place the chicken cutlet pieces next to the rice, leaning them on the rice so that there will be a space to pour the curry.
+
+			Pour curry next to the chicken cutlet, put fukujinzuke on the side and serve immediately.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Katsu Curry</p>
+    </footer>
+</body>
+</html>
