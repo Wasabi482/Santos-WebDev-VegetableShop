@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vegetable Market</title>
+    <link rel="stylesheet" href="veggies.css?v=<?php echo time(); ?>">
+    
+</head>
+
+<body>
+ <div class="navbar">
+    <h1> Vegetable Shop Order Form</h1>
+ </div>
+ 
+    <form method="POST" action="order.php">   
+   
+<div class="container">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+            <label for="vegetable">Vegetables:</label>
+
+        <select class="choices" id="choices" name="choices">
+            <option value="potato">Potato-₱90</option>
+            <option value="carrot" >Carrot-₱80</option>
+            <option value="tomato">Tomato-₱20</option>
+            <option value="cabbage">Cabbage-₱80</option>
+            <option value="celery">Broccoli-₱90</option>
+        </select>
+
+        
+            
+            <div class="input-group">
+
+            <label>Size:</label>
+
+            <input type="radio" id="small" name="size" value="small" required>
+
+            <label for="small">Small: 1/4kg</label>
+
+            <input type="radio" id="medium" name="size" value="medium">
+
+            <label for="medium">Medium: 1/2kg</label>
+
+            <input type="radio" id="large" name="size" value="large">
+
+            <label for="large">Large: 1kg</label>
+        </div>
+
+        <div class="input-group">
+            <label for="extras">Extras:</label>
+
+            <input type="checkbox" id="plastic" name="extras[]" value="plastic" checked>
+
+            <label for="plastic">Plastic Bag: +₱5.75</label>
+
+            <input type="checkbox" id="paper" name="extras[]" value="paper">
+
+            <label for="paper">Paper Bag: +₱10.50</label>
+        </div>
+
+        <label for="instructions">Special Instructions:</label>
+
+        <textarea id="instructions" name="instructions" rows="2"></textarea>
+
+        <button type="submit">Place Order</button>
+</div>
+
+
+
+</form>
+
+</body>
+
+</html>
