@@ -1,0 +1,10 @@
+Order Summary
+-----------------
+Name:user1
+Product Type:celery(₱389.54)
+Size:1kg
+Extras: plastic(₱5.75)
+Total Price: ₱395.29
+Special Instructions: Testing instruction.
+
+Thank you for your order!
